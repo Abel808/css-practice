@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.right{
+    background-color: aquamarine;
+}
+.left{
+    background-color: beige;
+}
+
+.hero{
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+.logo{
+    width: 25px;
+}
+
+.user img{
+    border-radius: 50%;
+    width: 40px;
+}
