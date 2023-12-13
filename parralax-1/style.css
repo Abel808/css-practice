@@ -91,6 +91,7 @@ hr{
 }
 
 .fig img{
+ /* transform: rotate(90deg); */
   width: 100%;
   object-position: bottom;
   position: absolute;
@@ -102,10 +103,10 @@ hr{
 }
 .fig{
     overflow: hidden;
-    height: 150px;
+    height: 250px;
     grid-column:2;
     position: relative;
 
-    
+    object-position: top;
 }
 
