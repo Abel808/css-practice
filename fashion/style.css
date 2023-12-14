@@ -55,17 +55,20 @@ img{
 }
 
 h1{
-    display: none;
+   z-index: 1;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 20%;
     font-size: 10rem;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 230, 7);
+     /* transform: translate(0, -50%);  */
+    color: rgb(255, 255, 255);
     font-weight: 600;
     letter-spacing: 30px;
     text-transform: uppercase;
     text-shadow: 2px 2px 14px #00000056;
+    pointer-events: none;
+    animation: movein 3s ease-in-out;
+    
 
 }
 
@@ -77,6 +80,7 @@ nav{
     display: flex;
     width: 100%;
     padding: 20px;
+    animation: movein 1.2s ease-out;
 }
 
 .images:has(:hover) img:not( :hover){
@@ -92,3 +96,33 @@ img:hover{
     filter: saturate(1);
 }
 
+@keyframes movein {
+
+    0%{
+       
+        transform: translateX(-400px);
+    }
+    
+}
+
+.images img:nth-of-type(1){
+    height: 400px;
+    width: 200px;
+    object-fit: cover;
+}
+.images img:nth-of-type(2){
+    height: 520px;
+    width: 300px;
+    object-fit: cover;
+}
+.images img:nth-of-type(4){
+    height: 500px;
+    width: 220px;
+    object-fit: cover;
+}
+
+.images img:last-child{
+    height: 400px;
+    width: 200px;
+    object-fit: cover;
+}
