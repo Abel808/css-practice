@@ -50,7 +50,7 @@ img{
     position: relative;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     transition: 0.3s all;
 }
 
@@ -61,7 +61,7 @@ h1{
     left: 20%;
     font-size: 10rem;
      /* transform: translate(0, -50%);  */
-    color: rgb(255, 255, 255);
+    color: rgb(223, 28, 28);
     font-weight: 600;
     letter-spacing: 30px;
     text-transform: uppercase;
@@ -113,6 +113,11 @@ img:hover{
 .images img:nth-of-type(2){
     height: 520px;
     width: 300px;
+    object-fit: cover;
+}
+.images img:nth-of-type(3){
+    height: 380px;
+    width: 260px;
     object-fit: cover;
 }
 .images img:nth-of-type(4){
